@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="coiso">
+        <main>
+            <section class="timer">
+                <span class="timerDisplay">
+                    <p id="minutes2">0</p>
+                    <p id="minutes1">0</p>
+                </span>
+                    <span class="twoDots">:</span>
+                <span class="timerDisplay">
+                    <p id="seconds2">0</p>
+                    <p id="seconds1">0</p>
+                </span>
+            </section>
+            <section class="buttons">
+                <button class="btnn g" onclick="start()" id="startButton">Start</button>
+                <button class="btnn r" onclick="stop()" id="stopButton" hidden>Stop</button>
+                <button class="btnn y" onclick="start()" id="continueButton" hidden>Continue</button>
+                <button class="btnn b" onclick="clearA()">Clear</button>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

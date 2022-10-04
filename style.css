@@ -1,0 +1,97 @@
+@font-face {
+    font-family: stopwatchFont;
+    src: url(font/DS-DIGI.TTF);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    user-select: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+}
+
+.timerDisplay {
+    font-family: stopwatchFont;
+    display: flex;
+    font-size: 190px;
+}
+    .twoDots {
+        font-size: 110px;
+    }
+
+.btnn {
+    padding: 15px;
+    width: 170px;
+    border: 2px solid;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 100ms;
+}
+    .b {
+        background-color: rgb(24, 102, 255);
+        border-color: rgb(2, 61, 150);
+    }
+    .g {
+        background-color: rgb(45, 221, 22);
+        border-color: rgb(2, 133, 20);
+    }
+    .r {
+        background-color: rgb(236, 11, 11);
+        border-color: darkred;
+    }
+    .y {
+        background-color: rgb(224, 210, 5);
+        border-color: darkgoldenrod;
+    }
+    
+    .btnn:hover {
+        box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.445);
+        transform: translateY(-0.8px);
+        margin: -2px 0;
+    }
+        .b:hover {
+            border-bottom: 3px solid rgb(2, 61, 150);
+        }
+        .g:hover {
+            border-bottom: 3px solid rgb(2, 133, 20);
+        }
+        .r:hover {
+            border-bottom: 3px solid darkred;
+        }
+        .y:hover {
+            border-bottom: 3px solid darkgoldenrod;
+        }
+
+    .btnn:active {
+        box-shadow: inset 0 0 20px 12px rgba(0, 0, 0, 0.11);
+        color: rgb(236, 236, 236);
+        transform: translateY(0);
+    }
+        .b:active {
+            border-bottom: 2px solid rgb(2, 61, 150);
+        }
+        .g:active {
+            border-bottom: 2px solid rgb(2, 133, 20);
+        }
+        .r:active {
+            border-bottom: 2px solid darkred;
+        }
+        .y:hover {
+            border-bottom: 3px solid darkgoldenrod;
+        }
